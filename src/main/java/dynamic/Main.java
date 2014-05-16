@@ -7,7 +7,7 @@ import org.eclipse.jetty.servlet.ServletHolder;
 public class Main
 {
   public static void main(String[] args) throws Exception{
-    Server server = new Server(Integer.valueOf(System.getenv("PORT")));
+    Server server = new Server(8000);
     ServletContextHandler context = new ServletContextHandler(ServletContextHandler.SESSIONS);
     context.setContextPath("/");
     server.setHandler(context);
